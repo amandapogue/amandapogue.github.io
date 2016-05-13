@@ -1,97 +1,79 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'libs/skel';
 
 /*
-	Striped by HTML5 UP
+	Arcana by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-	form {
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		select,
-		textarea {
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Image */
+
+	.image {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		img {
 			position: relative;
-			box-shadow: none !important;
 			-ms-behavior: url('assets/js/ie/PIE.htc');
 		}
 	}
 
-	input[type="button"],
+/* Icon */
+
+	.icon {
+		&.major {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Button */
+
 	input[type="submit"],
 	input[type="reset"],
-	button,
+	input[type="button"],
 	.button {
 		position: relative;
-		box-shadow: none !important;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
-	.pagination {
-		.pages {
-			a {
-				position: relative;
-				box-shadow: none !important;
-				-ms-behavior: url('assets/js/ie/PIE.htc');
-			}
-		}
-	}
-
-	.box {
-		&.calendar {
-			td {
-				a, span {
-					position: relative;
-					box-shadow: none !important;
-					-ms-behavior: url('assets/js/ie/PIE.htc');
-				}
-			}
-		}
-
-		&.text-style1 {
-			.inner {
-				position: relative;
-				box-shadow: none !important;
-				-ms-behavior: url('assets/js/ie/PIE.htc');
-			}
-		}
-	}
-
-	#nav {
-		li {
-			a {
-				position: relative;
-				box-shadow: none !important;
-				-ms-behavior: url('assets/js/ie/PIE.htc');
-			}
-		}
-	}
+/* Box */
 
 	.box {
 		&.post {
-			.info {
-				box-shadow: none !important;
-				-ms-behavior: url('assets/js/ie/PIE.htc');
-
-				.stats {
-					li {
-						a {
-							position: relative;
-							box-shadow: none !important;
-							-ms-behavior: url('assets/js/ie/PIE.htc');
-						}
-					}
-				}
+			.inner {
+				margin-left: 35%;
 			}
 		}
 	}
 
-	#logo {
-		position: relative;
-		box-shadow: none !important;
+/* Dropotron */
+
+	.dropotron {
 		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Banner */
+
+	#banner {
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		&.style2 {
+			background: #fdfdfd url('images/bg01.png');
+		}
 	}
