@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MTurk &amp; Qualtrics Tutorial</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">University of Rochester <em>MTurk &amp; Qualtrics Tutorial</em></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li ><a href="index.html">Home</a></li>
+								<li>
+									<a href="samples.html">Samples</a>
+									<ul>
+									<li><a href="samples.html#simplesurvey">Simple Survey</a></li>
+										<li><a href="samples.html#experiment">Complex Experimental Design</a></li>
+										<li><a href="samples.html#samplecode">Downloadable Versions</a></li>
+									</ul>
+								</li>
+								<li class="current"><a href="mturktutorial.html">MTurk Tutorial</a>
+								<ul>
+									<li><a href="mturktutorial.html#what">What is AMT?</a></li>
+										<li><a href="mturktutorial.html#why">Why use AMT?</a></li>
+											<li><a href="mturktutorial.html#how">How to use AMT</a></li>
+											<li><a href="mturktutorial.html#pay">How to pay workers</a></li>
+									</ul></li>
+								<li><a href="tutorial.html">Qualtrics Tutorial</a>
+									<ul>
+									<li><a href="tutorial.html#sample">Sample Survey</a></li>
+										<li><a href="tutorial.html#questiontypes">Question Types</a></li>
+											<li><a href="tutorial.html#functions">Functionality</a></li>
+											<li><a href="tutorial.html#output">Look at Output</a></li>
+										<li><a href="tutorial.html#mturk">Link to MTurk</a></li>
+									</ul></li>
+								<li><a href="tips.html">Tips &amp; Tricks</a></li>
+								<li><a href="pages.html">Useful Pages</a></li>
+								<li><a href="http://kinderlab.bcs.rochester.edu/">UR Kinder Lab</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Banner -->
+	<!--			<section id="banner">
+					<header>
+						<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
+						<a href="#" class="button">Learn More</a>
+					</header>
+				</section> -->
+
+					<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>MTurk Tutorial </h2>
+										<p>In this section we'll talk about what Amazon's mechanical Turk is, and why you might want to use it. How to set 
+										up an account, post studies, and pay participants.</a></p>
+									</header>
+									</article>
+
+
+	<!-- extra section -->
+<a name="what"></a>								
+
+							<!-- Content -->
+
+								<article>
+
+									<h3>What is Mechanical Turk?</h3>
+									<p>Mechanical Turk is an online tool provided by Amazon that allows requesters to post short tasks called HITs (Human Intelligence Tasks), to be completed by regular workers. The kinds of 
+									tasks a worker will do will often vary from simple tasks like transcribing words found embedded in pictures to complex surveys (some even much more 
+									complicated and time consuming than the work we post). Workers get paid for these tasks, and typically the pay scale varies based on the amount 
+									of work, and the difficulty of the work the worker is expected to do. It's important to note that while some people do this work to suppliment their income, 
+									some workers also do this work as their primary income source. We attempt to pay at a rate that would match how much the worker would make 
+									if s/he came into our lab. For more on this, Amazon provides a few answers on their <a href="https://www.mturk.com/mturk/help?helpPage=overview">website</a>.</p>
+
+<a name="why"></a>
+									<h3>Why use MTurk?</h3>
+									<p>While a lot of research is still conducted in lab, there are a lot of reasons why researchers have switched to using Mechanical Turk. There are a few reasons why
+									 we've seen such a switch lately in the field. Here are a few for example: 
+									 <li style="margin-left:20px">Quick Data Collection - a whole study can be run in hours, rather than days or weeks</li>
+									 <li style="margin-left:20px">Affordable Data Collection - most in lab studies pay by the half hour / hour, on AMT you can pay for much shorter tasks</li>
+									 <li style="margin-left:20px">More representative sample of the general population that most study pools - see: <a href="http://demographics.mturk-tracker.com/">here</a> for some of the demographics of the US workers</li>
+									 <li style="margin-left:20px">Maybe less bias - subjects are unlikely to know what kind of lab you run</li>
+									 <li style="margin-left:20px">Easily replicable - you can share the code you used to run a study, and others can easily attempt to replicate your findings </li>
+<li style="margin-left:20px">Results can be just as good as in lab - see: <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0057410">Crump, McDonnell, & Gureckis (2013)</a> or <a href="http://link.springer.com/article/10.3758%2Fs13423-012-0296-9">Germine, Nakayama, Duchaine, Chabris, Chatterjee, & Wilmer (2012)</a> who replicated a bunch of 
+findings in cognitive psychology using Mechanical Turk</li><br>									 
+									 
+									 There are also a few concerns to keep in mind when running studies online:
+									 <li style="margin-left:20px">Quality of work - how can you be sure that people are reading your instructions, paying attention, not a bot?</li>
+									 <li style="margin-left:20px">Attrition - many people will drop out of your study without completeing (probably more than in lab, since there is no social cost)</li>
+									 <li style="margin-left:20px">Less control - you'll have less control about the environment the worker will participate in; a worker may leave in the middle of your task 
+									 and return, they might not have the best equipment, could easily get distracted, etc</li>
+									 <li style="margin-left:20px">Reviewer Issues - fortuntely there isn't a lot of pushback from reviewers, but sometimes a reviewer will push for an in-lab version if they are not 
+									 already sold on the merits of online studies.</li>
+									 <li style="margin-left:20px">Not all studies will work online - currently no good eyetracking paradigms, developmental studies not well suited for this medium, etc</li><br>
+									 
+									 In later sections of this tutorial we'll discuss ways to deal with some of these issues. </p>
+									 
+									 <a name="how"></a>
+									 <h3>How to use MTurk</h3>
+									 <p>First you need to set up an account. Start by going to <a href="https://requester.mturk.com/">Mechanical Turk</a>. You are currently looking at the requester homepage of 
+									 <a href="http://mturk.com">MTurk</a> (this is the main website, used by both requesters and workers). Click on the "create an account" link at the top of the page. If you already have
+									  an amazon account, you can log in using that account. If not, switch the radio button to say that you are a new user. You will be asked to accept a user agreement - read through, and accept it 
+									  if you agree to follow their terms of services. This should bring you to the requester homepage where you can begin to set up your first HIT. There are many types of templates available for different 
+									  tasks. Today we'll use this "survey link" type. <br>
+									  <p align ="center"><img src="images/types.png"></p>
+									  Click on "Create Project" to get started. What you should now see is the first page for setting up the study. The first bit of this page asks you 
+									  about information about your project. The project title is private, but the rest of the information will be shown to the workers (which is how they 
+									  decide whether or not to do your HIT). Generally you want to give a short, concise summary of the kind of work they will be doing - but not exact details of your study, for example: 
+<li style="margin-left:20px"><strong>Title:</strong> Short survey [10 mins]: Listen to sentences and click on the matching picture (you can only do one HIT)	</li>
+<li style="margin-left:20px"><strong>Description:</strong> You will be asked to listen to some sentences and click on a picture that matches the sentence. </li>
+<li style="margin-left:20px"><strong>Keywords:</strong> survey, language, match</li>								   <br> 
+									  <p align ="center"><img src="images/setup.png"></p>
+									  The next section allows you to set how much you will pay per HIT, how many HITs you want to post at once (I recommend <10, since >=10 will cost 
+									  you extra in fees, how long you want to permit people to finish your task (as a general rule of thumb you want to make this time ~double how long you think 
+									  your task will take to ensure that people have enough time to finish, but also to try to prevent them from wandering off in the middle of your study), how long before your HIT expires 
+									  (unless you are running a lot of participants at once or running a SUPER long study, a day will be more than enough time), and finally, you can set when mturk will autopay 
+									  participants (you can choose to pay or not pay participants before this time - or if you plan on accepting everyone (usually if IRB required) then you can set this time to be relatively short - 
+									  workers look favorably on requesters that pay relatively quickly, and post good reviews on websites like <a href="https://turkopticon.ucsd.edu">turkopticon</a>).<br>
+									  <p align ="center"><img src="images/hit_reqs.png"></p>
+									  In the final section, you should set up some controls on which workers can see your HITs. You can choose which geographic location you would like 
+									  your workers to come from. We specifically look for workers from the US (it's not perfect, but it is a way to try to select for English speakers), but you could 
+									  set this to be specific states (e.g., <a href="http://www.lrdc.pitt.edu/maplelab/">Scott Fraundorf</a> runs studies looking at a construction used in some states such as OH / PA, and 
+									  sometimes just wants workers from those states). You likely also want to restrict your selection to workers who have been approved by most other workers (another potential step 
+									  for quality control - the workers care a lot about their acceptance rate, as it often is used in this way, and so they really object to getting rejected). <br>
+									  <p align ="center"><img src="images/requirements.png"></p>
+									  The next section will be about what workers will see when they actually look at your HIT. On this page you can use the GUI to write a slightly more detailed 
+									  description of your task (see: the short description you would give in lab participants before a task). If you have any other requirements it would be good to
+									   list them on this page. You will need to replace the survey link with the link for your study by using the <> source button. In the source code, you need to find the 
+									   bit of code that says:</p>
+									   <ul><li style="margin-left:20px">
+			&#60;td>&#60;a href="<strong>http://www.linktomysurvey.com</strong>" target="_blank"&#62;<em>http://www.linktomysurvey.com</em>&#60;/a&#62;&#60;/td&#62;</li> </ul>
+								<p>Replace the bolded bit with the link to your survey, and the italicized bit with something like "Click here to start". Once you have made all of these 
+								changes you can then move onto previewing your project. I typically double check that the link goes to the right survey at this point. You'll also get to see the 
+								ad that is shown to the workers at this stage (see: the little blue box at the top is your HIT; your HIT will appear in a list of HITs to elligible workers, if they click on it, they'll see the 
+								longer description). <br>
+								<p align ="center"><img src="images/preview.png"></p>
+								
+								After you've decided that everything looks right 
+								you're finished with setting it up and you should be brought back to a projects page like this: <br>
+								<p align ="center"><img src="images/projects.png"></p>
+								Congrats! You've made your first project! All that's left is to post the HITs for subjects to participate.</p>
+								<a name="pay"></a>
+								<h3>Posting HITs &amp; paying subjects</h3>
+								<p>The next step is to post your hit. If you click on the "Create" tab you will return to this main projects page. By clicking on "Publish" you can begin 
+								to post your HIT. You'll get a chance to review all of the information shown above (double check: how many HITs to post, how much to pay, selection 
+								requirements, that your link works, etc). When you are ready to post, click "Next". You will then get a summary of the fees for posting this HIT.<br>
+								<p align ="center"><img src="images/publish_hits.png"></p>
+								At the bottom of this page you can click on a link to add funds to your account to pay for the HITs. This will take you to a seperate payments page. On this 
+								page you can set up a new creditcard or use one already attached to your account. If you know you will be running multiple HITs, you can figure out how much you need 
+								to pay in advance and pre-pay here (e.g., 4 batches of 8 HITs = 4 x $shown on the previous page). </p>
+								<p align ="center"><img src="images/pay.png"></p>
+								After you've paid, you can return to the tab with your HITs open, and click on "Publish". You should now be taken to the "Manage" page, which will 
+								show you a summary of the HIT you just posted, and will show you the status of your HIT (% complete), and a projected finish time (when the task will be done). And, 
+								now we wait.</p>
+								<p align ="center"><img src="images/pay.png"></p>
+								When the task is finished running, you can choose to ACCEPT or REJECT the work done by the workers by clicking on the "Results" tab. If you REJECT
+								 the work the worker will not get paid and this will affect their overall rating (reminder: they are really protective of their rating). If you set a short pay time, and plan on ACCEPTing all HITs this
+								  can be done automatically.</p>
+								  
+								  <h4>Finally, if you want to avoid having repeat participants you can set a "Qualification Type". For more on this, see the Tips &amp; Tricks tab above. </h4>
+								</article>
+
+						</div>
+					</div>
+				</section>
+				
+			
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+ <section class="3u 6u$(narrower) 12u$(mobilep)">
+								<h3>About Us:</h3>
+									<strong>Chigusa Kurumada:</strong> Assistant Professor, University of Rochester, Brain &amp; Cognitive Sciences<br>
+									<strong>Amanda Pogue:</strong> 3rd Year Graduate Student, University of Rochester, Brain &amp; Cognitive Sciences
+							</section> 
+						
+							<section class="6u 12u(narrower)">
+								<h3>Get In Touch</h3>
+								<form method="POST" action="https://formspree.io/apogue@ur.rochester.edu">
+									<div class="row 50%">
+										<div class="6u 12u(mobilep)">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="6u 12u(mobilep)">
+											<input type="email" name="_replyto" id="email" placeholder="Email" />
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<ul class="actions">
+											<input type="hidden" name="_next" value="http://amandapogue.github.io/Qualtrics_Tutorial/thanks.html" />
+											<input type="text" name="_gotcha" style="display:none" />
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+								<section class="3u 6u(narrower) 12u$(mobilep)">
+								<h3>Links:</h3>
+								<ul class="links">
+									<li><a href="http://mturk.com/">MTurk</a></li>
+									<li><a href="http://www.qualtrics.com">Qualtrics</a></li>
+									<li><a href="http://kinderlab.bcs.rochester.edu/">UR Kinder Lab</a></li>
+									<li><a href="http://chigusakurumada.jimdo.com//">Chigusa Kurumada</a></li>
+									<li><a href="http://amandapogue.github.io">Amanda Pogue</a></li> 
+
+								</ul>
+							</section>
+	
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="http://twitter.com/ehpogue" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/amandapogue" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:apogue@ur.rochester.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="http://amandapogue.github.io" class="icon fa-user"><span class="label">Amanda's Website</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Amanda Pogue. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
