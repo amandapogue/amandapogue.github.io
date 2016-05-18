@@ -147,7 +147,7 @@ Write in one word that describes the highlighted object in the text box below.</
 <li style="margin-left:20px">The position of the responses (horizontal or vertical)
 <li style="margin-left:20px">Whether you want to require a response before the participant can move on</li><p>
 
-<p>You can also customize the responses to include images, piped text, etc. or to arrange the location of the response text (above, below, beside, etc). To include an image, click on the dropdown arrow on the response and select "Insert Graphic". Adding an image here is the same as above. However, all MC responses require a text component (I've set it to a single space here, since no text is required for my fish question). </p>
+<p>You can also customize the responses to include images, piped text, etc. or to arrange the location of the response text (above, below, beside, etc). To include an image, click on the dropdown arrow on the response and select "Insert Graphic". Adding an image here is the same as above. However, all MC responses require a text component (I've set it to the words "big" and "small", but in white text which are invisible to the participant, but helpful when I view the data). </p>
  <p align ="center"><img src="images/insertGraphic.png"></p>
  <p>Once you've added an image to the response you can change things about it, like its size, or remove it using the same dropdown menu. You can also use the Rich Content Editor to format your response (change the font / color, could even add a sound clip, movie, etc).</p>
 
@@ -179,6 +179,29 @@ There are some options about how an individual block is displayed. By clicking o
 
  <a name="output"></a>
 <h3>Looking at the Output</h3>
+<p><strong>Viewing Reports</strong></p>
+You can view your data in two ways. If you just want to see overall how people are doing on questions you can "View Reports" and then select the "Initial Report" (if you were running different batches with changes, you might want to make more reports, but that is something a bit more complicated). This allows you to quickly look at the data, and you can even very easily "Add a graph" to visualize your data. For example, before this tutorial I ran through this survey twice and on both occassions selected the plain blue wug as the referent for "Blue", which results in the following data:</p>
+<p align ="center"><img src="images/visual_report.png"></p> 
+<p><strong>Download the Data</strong></p>
+Given the complicated nature of my data it makes more sense for me to download the data rather than to look at the reports (since I typically have multiple conditions, with maybe 4-8 participants per condition, and I want to see the data as a whole). You can download the data as a .csv file and open it in excel. Generally, I get it to export the choice text, and comma seperated. This allows me to keep a raw data file with data that makes sense (with the original text), and then to create a file that I will use to work in R to analyze my data with values coded in a way that make sense to me. On this page you can also select which questions you want to see the answers for (e.g., you can look at only the control questions, or just fillers; I often do this when looking up demographics reports for annual reviews). You'll want to click on the long link below the "csv" bar to download the data. The file will initially be zipped.
+<p align ="center"><img src="images/downloadData.png"></p> 
+<table style="width:100%">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table>
 
  <a name="mturk"></a>
 <h3>Linking up with MTurk</h3>
