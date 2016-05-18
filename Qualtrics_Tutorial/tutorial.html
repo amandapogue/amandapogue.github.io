@@ -190,7 +190,7 @@ This is another instance where we'll want to edit things in the "Survey Flow" us
 First, you need to enter the URL: <em>http://http://reporting.qualtrics.com/projects/randomNumGen.php</em>, and then click on "Add a paramter to send to web service..." Here we'll set out max value (choose any number of digits, I use 6 for no specific reason), and then click on the plus button to add a min value. Finally we want to set the Embedded Data so that we can access this random number later. You can call your Embedded Data anything you like, but yout have to set it to equal "random", since this is what is output by the web service.</p>
 
 Later, you will include this info into a question at the end of your survey for your Turkers to retreive. In the final block of this survey I have provided a single question that tells the Turker what their code is, using this little tag as follows: </p>
-<li>Here is your validation code for Mechanical Turk is <strong>${e://Field/mTurkCode}.</strong></li>
+<p align="center">Here is your validation code for Mechanical Turk is <strong>${e://Field/mTurkCode}.</strong></p>
 It finally asks for a Turker's Worker ID (in case they somehow manage to not properly copy this code). This question, thus looks like this:</p>
   <p align ="center"><img src="images/turkcode.png"></p>
 
